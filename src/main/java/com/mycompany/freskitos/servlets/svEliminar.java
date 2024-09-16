@@ -18,6 +18,8 @@ Controladora control = new Controladora();
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+            System.out.println("nuevo mensaje xd");
+        
     }
 
     
