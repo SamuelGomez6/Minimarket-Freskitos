@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h4>Formulario Registro</h4>
+        <form action="svRegistro" method="POST" class="form-register">
+            <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
+            <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+            <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
+        <a href="/paginas/TerminosCondiciones.html">Terminos y Condiciones</a>
+            <input class="botons" type="submit" value="Registrar">
+        <p><a href="/paginas/Login.html">¿Ya tienes una Cuenta?</a></p>
+    </form>
+        
+        <h1>Mostrar Usuarios</h1>
+        <p>haz click en este boton para ver los usuarios registrados</p>
+    <form action="svRegistro" method="GET">
+        <button type="submit">Mostrar usuarios</button>
+    </form>
+        
+        <h1>Eliminar Usuarios</h1>
+        <p>Ingrese el id del usuario a Eliminar</p> 
+    <form action="svEliminar" method="POST">
+        <input class="controls" type="text" name="id_usuario" id="id_usuario" placeholder="Ingrese el Id: ">
+        <button type="submit"> Eliminar Usuario </button>
+    </form>
+        
+        <h1>Editar Usuarios</h1>
+        <p>Ingrese el id del usuario que quiere editar</p>
+    <form action="svEditar" method="GET">
+        <input class="controls" type="text" name="id_usuarioEdit" id="id_usuarioEdit" placeholder="Id: ">
+        <button type="submit"> Editar Usuario </button>
+    </form>
+        
+    </body>
+</html>
